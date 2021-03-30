@@ -49,11 +49,44 @@ contract DAO {
     require(proposals[propHash].hash == bytes32(0));
     proposals[propHash] = Proposal(
       msg.sender,
+      propHash,
       block.timestamp,
       0,
       0,
       Status.Undecided;
     );
+  }
+
+
+  function vote(bytes32 propHash, Side side) external {
+    Proposal storage proposal = proposals[propHash];
+    require(hasVoted[msg.sender][propHash] == false, "You have already voted on this proposal");
+    require(proposals[propHas].has != bytes32(0), "Proposal Already Exists");
+    require(block.timestamp <= proposal.createdAt + VOTING_PERIOD, "The voting period for this proposal has already ended");
+    require((side == Side.Yes || side == Side.No), "You did not input Side.Yes or Side.No");
+    hasVoted[msg.sender][propHas] = true;
+
+    if (side == Side.Yes) {
+      proposal.votesYes += shares[msg.sender];
+      if (proposal.votesYes * 100 / totalShares > 50) {
+        proposal.status = Status.Approved;
+      }
+    } else {
+      proposal.votesNo += shares[msg.sender];
+      if(proposal.votesNo * 100 / totalShares > 50) {
+        proposal.status = Status.Rejected;
+      }
+    }
 
   }
+
+
 }
+
+
+
+
+
+
+
+
