@@ -1,6 +1,6 @@
 pragma solidity ^0.7.3;
 
-import '@openzeppelin/contracs/token/ERC20/ERC20.sol';
+import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 
 contract DAO {
   enum Side { Yes, No }
@@ -53,7 +53,7 @@ contract DAO {
       block.timestamp,
       0,
       0,
-      Status.Undecided;
+      Status.Undecided
     );
   }
 
@@ -61,10 +61,10 @@ contract DAO {
   function vote(bytes32 propHash, Side side) external {
     Proposal storage proposal = proposals[propHash];
     require(hasVoted[msg.sender][propHash] == false, "You have already voted on this proposal");
-    require(proposals[propHas].has != bytes32(0), "Proposal Already Exists");
+    require(proposals[propHash].hash != bytes32(0), "Proposal Already Exists");
     require(block.timestamp <= proposal.createdAt + VOTING_PERIOD, "The voting period for this proposal has already ended");
     require((side == Side.Yes || side == Side.No), "You did not input Side.Yes or Side.No");
-    hasVoted[msg.sender][propHas] = true;
+    hasVoted[msg.sender][propHash] = true;
 
     if (side == Side.Yes) {
       proposal.votesYes += shares[msg.sender];
