@@ -1,0 +1,123 @@
+{
+  "contractName": "DAO",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.3+commit.9bfce1f6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/vardy/dev/solidity/eathTheBlocks/deFiMastery/DAO/contracts/DAO.sol\":\"DAO\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/vardy/dev/solidity/eathTheBlocks/deFiMastery/DAO/contracts/DAO.sol\":{\"keccak256\":\"0xc79678e898eb7541537d36a6135790c1d32e35e987832b1d71ea179f713cdde3\",\"urls\":[\"bzz-raw://105849fe27738631381b7e81f8dad40f5ab5e437832dfd9117ff4318d25a1ea2\",\"dweb:/ipfs/QmadncND6dTjzs5rTCmWaLPVfQMMQYi5ALnUoh3sDeR2a2\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220bbd2d1a1f5b406c969086946a83eed077af0f25be27eb04b7f2e0fd7ec7f1ec964736f6c63430007030033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220bbd2d1a1f5b406c969086946a83eed077af0f25be27eb04b7f2e0fd7ec7f1ec964736f6c63430007030033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "27:19:0:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "27:19:0:-:0;;;;;",
+  "source": "pragma solidity ^0.7.3;\r\n\r\ncontract DAO {\r\n\r\n}\r\n",
+  "sourcePath": "C:/Users/vardy/dev/solidity/eathTheBlocks/deFiMastery/DAO/contracts/DAO.sol",
+  "ast": {
+    "absolutePath": "/C/Users/vardy/dev/solidity/eathTheBlocks/deFiMastery/DAO/contracts/DAO.sol",
+    "exportedSymbols": {
+      "DAO": [
+        2
+      ]
+    },
+    "id": 3,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".3"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 2,
+        "linearizedBaseContracts": [
+          2
+        ],
+        "name": "DAO",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 3,
+        "src": "27:19:0"
+      }
+    ],
+    "src": "0:48:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/C/Users/vardy/dev/solidity/eathTheBlocks/deFiMastery/DAO/contracts/DAO.sol",
+      "exportedSymbols": {
+        "DAO": [
+          2
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.7",
+            ".3"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            2
+          ],
+          "name": "DAO",
+          "nodes": [
+            null
+          ],
+          "scope": 3
+        },
+        "id": 2,
+        "name": "ContractDefinition",
+        "src": "27:19:0"
+      }
+    ],
+    "id": 3,
+    "name": "SourceUnit",
+    "src": "0:48:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.3+commit.9bfce1f6.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-30T15:18:47.465Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
